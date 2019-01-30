@@ -19,8 +19,8 @@ $s3 = new Aws\S3\S3Client([
 // Send a PutObject request and get the result object in Minio.
 $resul = $s3->putObject(array(
 	'Bucket'		=>	'009admin',					// BucketName
-	'Key'			=>	'Sai_Anju_MaAu.mp3', 		// File Name
-	'SourceFile'	=>	'C:\xampp\htdocs\admin009\minio\admin009.exe',
+	'Key'			=>	'Sai_Anju_Ma_au.mp3', 		// File Name
+	'SourceFile'		=>	'C:\xampp\htdocs\admin009\minio\admin009.exe',
 	'Body'			=>	fopen('Sai_Anju_MaAu.mp3', 'r')  
 ));
 
